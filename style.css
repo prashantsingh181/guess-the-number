@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Press Start 2P', sans-serif;
+  color: #eee;
+  background-color: #222;
+  transition: background-color 300ms ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+/* LAYOUT */
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem;
+}
+
+main {
+  color: #eee;
+  display: flex;
+  flex: 1 1 0;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 4rem;
+  padding: 2.5rem 2rem;
+}
+
+.left {
+  flex: 1 1 0;
+}
+.left form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  flex: 1 1 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* ELEMENTS STYLE */
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  width: 100%;
+  margin-block: 2.5rem;
+}
+
+.number-container {
+  margin-block: 3rem;
+  display: flex;
+  align-items: center;
+}
+.number {
+  background: #eee;
+  color: #333;
+  font-size: 6rem;
+  width: 15rem;
+  padding: 3rem 0rem;
+  text-align: center;
+  border-radius: 0.25rem;
+}
+.number-container::after,
+.number-container::before {
+  content: '';
+  flex: 1 1 0;
+  display: inline-block;
+  height: 7px;
+  background-color: #eee;
+}
+
+.between {
+  font-size: 1.4rem;
+}
+
+.guess {
+  background: none;
+  border: 4px solid #eee;
+  font-family: inherit;
+  color: inherit;
+  font-size: 5rem;
+  padding: 2.5rem;
+  width: 25rem;
+  text-align: center;
+  display: block;
+  margin-bottom: 3rem;
+}
+
+.btn {
+  border: none;
+  background-color: #eee;
+  color: #222;
+  font-size: 2rem;
+  font-family: inherit;
+  padding: 2rem 3rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
+
+.message {
+  margin-bottom: 8rem;
+  height: 3rem;
+}
+
+.label-score {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .right {
+    text-align: center;
+  }
+  .top-section {
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+  .number {
+    padding: 2.5rem 0;
+    font-size: 4.5rem;
+    width: 12rem;
+  }
+  .guess {
+    font-size: 4rem;
+    width: 22rem;
+  }
+}
