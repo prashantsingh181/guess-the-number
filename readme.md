@@ -2,6 +2,8 @@
 
 Welcome to the **Guess My Number!** game, a fun and interactive way to test your guessing skills. The objective is to guess a randomly generated number between 1 and 20. Can you find the number in the fewest attempts?
 
+<img width="1440" alt="Guess the Number Preview" src="https://github.com/user-attachments/assets/c8fbd951-0f00-4c1d-8ecb-ef801c37b6a5" />
+
 ## Live Demo
 
 You can try out the game [here](https://prashantsingh181.github.io/guess-the-number/)
